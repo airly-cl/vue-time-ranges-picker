@@ -7,10 +7,10 @@ import {
 import { timeTextToNumber, timeNumberToText } from '../core/helpers';
 import RangesController from '../core/RangesController';
 
-import RangesScales from './RangesScales/index.vue';
-import HoursMarks from './HoursMarks/index.vue';
-import QuartersTexts from './QuartersTexts/index.vue';
-import ChosenTimePointers from './ChosenTimePointers/index.vue';
+import RangesScales from './RangesScales/RangesScale.vue';
+import HoursMarks from './HoursMarks/HoursMark.vue';
+import QuartersTexts from './QuartersTexts/QuartersText.vue';
+import ChosenTimePointers from './ChosenTimePointers/ChosenTimePointer.vue';
 
 export default {
   name: 'TimeRangesPicker',
@@ -25,7 +25,7 @@ export default {
   props: {
     value: {
       type: Array,
-      default: () => {},
+      default: () => { },
     },
     isTwelfthMode: {
       type: Boolean,

@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <div class="time-picker-wrapper">
-      
       <TimeRangesPicker 
         :value="timeRanges" 
         :isTwelfthMode="isTwelfthMode" 
@@ -18,12 +17,12 @@
 
         
         <div>
-          <input v-model="isTwelfthMode" type="checkbox" > 
+          <input v-model="isTwelfthMode" type="checkbox"> 
           <span>twelfth mode</span>
         </div>
 
         <div>
-          <input v-model="viewOptions.isShowChosenTime" type="checkbox" >
+          <input v-model="viewOptions.isShowChosenTime" type="checkbox">
           <span>show chosen time</span>
         </div>
 
@@ -33,7 +32,7 @@
         </div>
 
         <div>
-          <input v-model="viewOptions.isShowQuartersText" type="checkbox" > 
+          <input v-model="viewOptions.isShowQuartersText" type="checkbox"> 
           <span>show quarters text</span>
         </div>
 
@@ -43,7 +42,7 @@
         </div>
 
         <div>
-          <input v-model="viewOptions.isShowHoursMarks" type="checkbox" > 
+          <input v-model="viewOptions.isShowHoursMarks" type="checkbox"> 
           <span>show hours marks</span>
         </div>
 
@@ -82,13 +81,12 @@
           <span>extra pointer radius</span>
         </div>
       </div>
-
     </div>
   </div>
 </template>
 
 <script>
-import TimeRangesPicker from './TimeRangesPicker/index.vue';
+import TimeRangesPicker from './TimeRangesPicker/TimeRangesPicker.vue';
 
 export default {
   name: 'App',

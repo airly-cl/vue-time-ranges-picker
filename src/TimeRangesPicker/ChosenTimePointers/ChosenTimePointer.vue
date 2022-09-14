@@ -6,14 +6,14 @@
     class="time-points"
   >
     <filter id="dropshadow" height="130%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="0.49"/> <!-- stdDeviation is how much to blur -->
-      <feOffset dx="0" dy="0" result="offsetblur"/> <!-- how much to offset -->
+      <feGaussianBlur in="SourceAlpha" stdDeviation="0.49" /> <!-- stdDeviation is how much to blur -->
+      <feOffset dx="0" dy="0" result="offsetblur" /> <!-- how much to offset -->
       <feComponentTransfer>
-        <feFuncA type="linear" slope="0.35"/> <!-- slope is the opacity of the shadow -->
+        <feFuncA type="linear" slope="0.35" /> <!-- slope is the opacity of the shadow -->
       </feComponentTransfer>
       <feMerge>
-        <feMergeNode/> <!-- this contains the offset blurred image -->
-        <feMergeNode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
+        <feMergeNode /> <!-- this contains the offset blurred image -->
+        <feMergeNode in="SourceGraphic" /> <!-- this contains the element that the filter is applied to -->
       </feMerge>
     </filter>
     <g>
@@ -35,16 +35,18 @@
             }"
             :transform="transformStyle(pointer.coordinates.degree)"
             class="chosen-time"
-          >{{ timeNumberToText(pointer.time, isTwelfthMode) }}</text>
+          >
+            {{ timeNumberToText(pointer.time, isTwelfthMode) }}
+          </text>
         </g>
       </g>
       
                     
       <circle
         v-for="pointer in movePointers"
+        :id="pointer.name"
         :ref="pointer.name"
         :key="pointer.name"
-        :id="pointer.name"
         :cx="circleRadius"
         :class="{
           'time-pointer': true,
@@ -59,12 +61,11 @@
         filter="url(#dropshadow)"
         @pointerdown="handleStartMove"
       />
-      
     </g>
   </g>
 </template>
 
-<script src="./index.js"></script>
-<style scoped src="./index.css"></style>
+<script src="./ChosenTimePointer.js"></script>
+<style scoped src="./ChosenTimePointer.css"></style>
 
 

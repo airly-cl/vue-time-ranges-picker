@@ -12,7 +12,7 @@
       @mouseup="handleEndMove"
     >
       <!-- group with set of svg-paths drawing arcs -->
-      <RangesScales :ranges="ranges" :circleStrokeWidth="combinedViewOptions.circleStrokeWidth"/>
+      <RangesScales :ranges="ranges" :circleStrokeWidth="combinedViewOptions.circleStrokeWidth" />
 
       <!-- hours marks around circle -->
       <HoursMarks
@@ -41,11 +41,11 @@
       />
 
       <!-- invisible element for moving angle detecting -->
-      <circle ref="input-center" :cx="viewBoxSize/2" :cy="viewBoxSize/2" r="0"/>
+      <circle ref="input-center" :cx="viewBoxSize/2" :cy="viewBoxSize/2" r="0" />
     </svg>
   </div>
 </template>
 
 
-<script src="./index.js"></script>
-<style scoped src="./index.css"></style>
+<script src="./TimeRangesPicker.js"></script>
+<style scoped src="./TimeRangesPicker.css"></style>

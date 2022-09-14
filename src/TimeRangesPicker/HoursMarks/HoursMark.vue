@@ -14,5 +14,5 @@
   </g>
 </template>
 
-<script src="./index.js"></script>
+<script src="./HoursMark.js"></script>
 

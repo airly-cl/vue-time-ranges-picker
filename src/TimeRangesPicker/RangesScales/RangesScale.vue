@@ -3,13 +3,13 @@
   <g>
     <g
       v-for="range in ranges"
-      :key="range.name"
       :id="range.name"
+      :key="range.name"
     >
       <path
         v-for="arc in range.arcs"
-        :key="arc.name"
         :id="range.name"
+        :key="arc.name"
         :style="{stroke: range.scaleColor}" 
         :d="`
           M${arc.start.x},${arc.start.y} 
@@ -20,8 +20,7 @@
       />
     </g>
   </g>
-
 </template>
 
-<script src="./index.js"></script>
+<script src="./RangesScale.js"></script>
 

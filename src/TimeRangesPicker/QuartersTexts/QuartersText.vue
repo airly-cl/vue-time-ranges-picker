@@ -17,7 +17,7 @@
   </g>
 </template>
 
-<script src="./index.js"></script>
-<style scoped src="./index.css"></style>
+<script src="./QuartersText.js"></script>
+<style scoped src="./QuartersText.css"></style>
 
 
