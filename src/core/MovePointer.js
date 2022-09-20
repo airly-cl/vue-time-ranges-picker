@@ -41,7 +41,6 @@ class MovePointer {
     if (currentY < centerY) {
       angleInDegrees = 360 - angleInDegrees;
     }
-
     this.controller.handlePointerMove(this, angleInDegrees);
   }
 

@@ -1,64 +1,28 @@
 {
-  "name": "vue-time-ranges-picker",
-  "version": "0.9.9",
+  "name": "test_convert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/library.js",
+  "module": "dist/library.mjs",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "build-module": "vue-cli-service build --target lib --name vue-time-ranges-picker ./src/TimeRangesPicker/TimeRangesPicker.vue",
-    "lint": "vue-cli-service lint"
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "main": "./dist/vue-time-ranges-picker.common.js",
-  "files": [
-    "dist/*",
-    "src/*",
-    "public/*",
-    "*.json",
-    "*.js"
-  ],
-  "license": "MIT",
-  "author": {
-    "name": "Alex Knyazev",
-    "email": "alex.knyazev.world@gmail.com"
-  },
-  "homepage": "https://github.com/alex-knyazev/vue-time-ranges-picker",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/alex-knyazev/vue-time-ranges-picker"
-  },
-  "dependencies": {
-    "add-zero": "^1.0.0",
-    "twelve-to-twentyfour": "^1.0.2",
-    "twentyfour-to-twelve": "^1.0.1",
-    "vue": "^3.2.39",
-    "core-js": "^3.8.3"
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "vue": "^3.0.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^5.0.8",
-    "@vue/cli-plugin-eslint": "^5.0.8",
-    "@vue/cli-service": "^5.0.8",
-    "@vue/compiler-sfc": "^3.0.0",
-    "eslint": "^7.32.0",
-    "@babel/eslint-parser": "^7.12.16",
-    "eslint-plugin-vue": "^8.0.3",
-    "@babel/core": "^7.12.16"
+    "rollup": "^2.79.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-vue": "^6.0.0"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "@babel/eslint-parser"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
+  "dependencies": {
+    "@vue/compiler-sfc": "^3.2.39",
+    "add-zero": "^1.0.0",
+    "rollup-plugin-import-css": "^3.0.3",
+    "twelve-to-twentyfour": "^1.0.2",
+    "twentyfour-to-twelve": "^1.0.1"
   }
 }

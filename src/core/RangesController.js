@@ -65,11 +65,11 @@ class RangesController {
     const rangeWithStartPointer = this.ranges.find(r => r.startMovePointer.name === pointer.name);
     const rangeWithEndPointer = this.ranges.find(r => r.endMovePointer.name === pointer.name);
 
-    const isMovingAllowed = this.checkIfMovingAllowed(
+    const isMovingAllowed = this.movePointers > 2 ? this.checkIfMovingAllowed(
       time,
       rangeWithEndPointer.startMovePointer.time,
       rangeWithStartPointer.endMovePointer.time,
-    );
+    ) : true
     if (!isMovingAllowed) {
       return;
     }
