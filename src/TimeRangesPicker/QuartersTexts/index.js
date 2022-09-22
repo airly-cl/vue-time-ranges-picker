@@ -35,11 +35,11 @@ export default {
           ...getTimeCoordinates(12, offsetRadius),
         },
         {
-          name: '06:00',
+          name: '18:00',
           ...getTimeCoordinates(18, offsetRadius),
         },
         {
-          name: '12:00',
+          name: '00:00',
           ...getTimeCoordinates(0, offsetRadius),
         },
       ];
