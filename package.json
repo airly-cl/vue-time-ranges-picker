@@ -1,5 +1,5 @@
 {
-  "name": "test_convert",
+  "name": "flair-range-picker",
   "version": "1.0.0",
   "description": "",
   "main": "dist/library.js",
